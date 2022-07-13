@@ -29,19 +29,22 @@ public class Interface {
 		System.out.println("═══════════════════════════════════════════════════════════════════════");
 		usuario = entrada.nextInt();
 		
+			
 		System.out.println("Digite o valor: ");
 		valor = entrada.nextDouble();
 		
 		if (usuario == 1) {
 			System.out.println("As conversões do Dolar para outras moedas são: ");
-			System.out.println("Real: " + valor * cp.getReal());
-			System.out.println("Euro: " + valor * cp.getEuro());
+			System.out.println("Dolar: " + valor + " → " + "Real: " + valor * cp.getReal());
+			System.out.println("Dolar: " + valor + " → " + "Euro: " + valor * cp.getEuro());
+			System.out.println("Dolar: " + valor + " → " + "Libra: " + valor * cp.getLibra());
+			System.out.println("Dolar: " + valor + " → " + "Rublo: " + valor * cp.getRublo());
 		}
 		if (usuario == 2) {
 			System.out.println("As conversões do Euro para outras moedas são: ");
 		}
 		if (usuario == 3) {
-			System.out.println("As conversões do Rubro para outras moedas são: ");
+			System.out.println("As conversões do Rublo para outras moedas são: ");
 		}
 		if (usuario == 4) {
 			System.out.println("As conversões do Iene para outras moedas são: ");
@@ -50,7 +53,7 @@ public class Interface {
 			System.out.println("As conversões do Libra Esterlina para outras moedas são: ");
 		}
 		if (usuario == 6) {
-			System.out.println("As conversões do Renminbi para outras moedas são: ");
+			System.out.println("As conversões do Reminbi para outras moedas são: ");
 		}
 		if (usuario == 7) {
 			System.out.println("As conversões do Real para outras moedas são: ");
@@ -62,9 +65,14 @@ public class Interface {
 			System.out.println("Fim de programa");
 			
 		}
-		if (usuario > 9 || usuario < 1 ) {
+		if (usuario > 9) {
 			System.out.println("Digitou errado, tente novamente...");
+			if(usuario < 1){
+				
+			}
 		}
+		
+		
 		
 		entrada.close();
 	}
