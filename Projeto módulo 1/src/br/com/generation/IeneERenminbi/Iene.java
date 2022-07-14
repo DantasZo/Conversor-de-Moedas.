@@ -2,7 +2,7 @@ package br.com.generation.IeneERenminbi;
 
 import java.util.Scanner;
 
-public class Iene_e_Renminbi {
+public class Iene {
 
 
 	public static void main(String[] args) {
