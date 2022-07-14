@@ -9,6 +9,5 @@ public class Real_e_PesoArgentino {
 	  e BR o pais base da onde ela é usada; Bom trabalho a todos!
 	  Branch-Real
 	*/
-	
-
+	int teste;
 }
