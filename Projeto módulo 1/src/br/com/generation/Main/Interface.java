@@ -6,18 +6,16 @@ import java.util.Scanner;
 public class Interface {
 
 	public static void main(String[] args) {
-
-			Scanner entrada = new Scanner (System.in);
-			ConversorDolar cp = new ConversorDolar();
+			//--> Objeto das classes conversores...
 			ConversorIene cp1 = new ConversorIene();
 			ConversorEuro cp2 = new ConversorEuro();
 			ConversorRublo cp3 = new ConversorRublo();
-
+			// --> Looping até o usuario, querer sair do program
 			while(true) {
 		
 			int usuario;
 			double valor;
-			
+			//--> Painel que sera mostrado, com as opções de conversões...
 			System.out.println("╔═════════════════════════════════════════════════════════════════════╗");
 			System.out.println("║                       Conversor de Moedas                           ║");
 			System.out.println("╚═════════════════════════════════════════════════════════════════════╝");
@@ -26,38 +24,30 @@ public class Interface {
 			System.out.println("═══════════════════════════════════════════════════════════════════════");
 			System.out.println("1- Digite 1 para Dolar" + "\n2- Digite 2 para Euro" + "\n3- Digite 3 para Rubro" + 
 					"\n4- Digite 4 para Iene" + "\n5- Digite 5 para Libra Esterlina" + "\n6- Digite 6 para Reminbi" +
-					"\n7- Digite 7 para Real" + "\n8- Digite 8 para Peso Argentino" + "\n9- Digite 9 para Sair");
+					"\n7- Digite 7 para Real" + "\n8- Digite 8 para Peso Argentino" + "\n9- Digite 9 para Dolar Canadense" + "\n10- Digite 9 para Sair");
 			System.out.println("═══════════════════════════════════════════════════════════════════════");
-		
+			//--> Trata quando o usuario digitar letra, tanto na escolha da moeda, quanto no valor de conversão
 			try {
 			Scanner entrada1 = new Scanner (System.in); 
 			System.out.println("Digite a opção desejada para conversão: ");
 			usuario = entrada1.nextInt();//--> Usuario escolhe a moeda desejada.
 			System.out.println("Digite o valor: ");
 	 	 	valor = entrada1.nextDouble();
-	 	 	
+	 	 	// --> Continua o código através do tratamento de letra, tanto quanto ao valor do usuairo. e o valor da conversão...
 			} catch (InputMismatchException e) {
 				System.out.println("Letra não é compativel com o pedido, tente novamente...");
 				continue;
 				}	
-			if (usuario == 9 ){
+			//--> Para sair do programa
+			if (usuario == 10 ){
 	             System.out.println ( "Sair do programa..." );
 	             break ;
 	         }
-			
+			// -->  Se não for sair do programa, ele executa o case...
 			else {
 	             switch ( usuario ) {
 	             case  1 : 
 	            	 System.out.println ( "Dolar" );
-	            	 System.out.println("As conversões do Dolar para outras moedas são: ");
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Real: R$" + valor * cp.getReal()  );
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Euro: €" + valor * cp.getEuro());
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Libra: £" + valor * cp.getLibra());
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Rublo: ₽" + valor * cp.getRublo());
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Iene: ¥" + valor * cp.getIene());
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Remimbi: ¥" + valor * cp.getRemimbi());
-	  				 System.out.println("Dolar: US$" + valor + " → " + "Peso Argentino: $" + valor * cp.getPesoArg());
-	  				 System.out.println("═══════════════════════════════════════════════════════════════════════");
 	            	 
 	                 break ;
 	             case  2 :
@@ -107,18 +97,16 @@ public class Interface {
 	             case  8 :
 	            	 System.out.println  ( "Peso Argentino: " );
 	                 break ; 
+	             case  9 :
+	            	 System.out.println  ( "Dolar Canadense: " );
+	                 break ;     
 	                 
 	             default :
 	            	 System.out.println ( "Opção Invalida..." );
 	             }	             
 			}
-		}	
+		}
+			
 	}
-}
-			
-			
-			
 	
-
-
-
+}
