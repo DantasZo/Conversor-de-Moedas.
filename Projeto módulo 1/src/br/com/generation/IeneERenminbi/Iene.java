@@ -7,12 +7,8 @@ public class Iene {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
+		ConversorIene in = new ConversorIene();
 
-
-		double soma, fonte;
-		double dolEUA = 0.0073;
-		double realBR = 5.42;
-		double ienJAP = 1.0;
 
 		System.out.println("Insira a quantidade de Ienes: ");
 		ienJAP = leia.nextDouble();
