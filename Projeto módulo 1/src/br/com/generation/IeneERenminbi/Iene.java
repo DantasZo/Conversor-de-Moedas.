@@ -10,24 +10,33 @@ public class Iene {
 
 
 		double soma, fonte;
-		double dolEUA = 0.0073  ;
+		double dolEUA = 0.0073;
 		double realBR = 5.42;
-		double ienJAP;
+		double ienJAP = 1.0;
 
-		System.out.println("Insira a quantidade de ienes: ");
+		System.out.println("Insira a quantidade de Ienes: ");
 		ienJAP = leia.nextDouble();
 
 
 		soma = ienJAP*dolEUA;
 		fonte = soma;
 
-		System.out.println("Seu iene em dolar: "+soma);
-		soma = fonte*realBR;  
-		System.out.println("Essa é sua quantidade de iene em reais: "+soma);
-		soma = fonte*6.72;
-		System.out.println("Essa é sua quantidade de ienes em Renminbi: "+soma);
+		System.out.println("Essa é sua quantidade Iene de em Dolar: "+soma);
+		soma = fonte*dolEUA;  
+		System.out.println("Essa é sua quantidade de Iene em Reais: "+soma);
+		soma = fonte*realBR;
+		System.out.println("Essa é sua quantidade de Iene em Renminbi: "+soma);
 		soma = fonte*0.84;
-		System.out.println("Essa sua quantidade de ienes em Libra Esterlina: "+soma);
+		System.out.println("Essa é sua quantidade de Ienes em Libra Esterlina: "+soma);
+		soma = fonte*0.0094;
+		System.out.println("Esse é a quantidade de Ienes em Dolars Canadences: "+soma);
+		soma = fonte*0.0072;
+		System.out.println("Esse é a quantidade de Ienes em Euros: "+soma);
+		soma = fonte*0.4196;
+		System.out.println("Esse é a quantidade de Ienes em Rublos: "+soma);
+		soma = fonte*0.9215;
+		System.out.println("Esse é a quantidade de Ienes em Pesos Argentinos: "+soma);
+		
 
 		leia.close();	
 	}
