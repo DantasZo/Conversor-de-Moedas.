@@ -1,7 +1,7 @@
-package br.com.generation.Main;
+package br.com.generation.conversorMoedas;
 
 public class ConversorIene {
-	private double Euro,Real, LibEst,Rublo, Dolar, Remimbi, PesoArg;
+	private double Euro,Real, LibEst,Rublo, Dolar, Remimbi, PesoArg, DolCan, PesoCol;
 
 	public ConversorIene(){
 		
@@ -12,8 +12,8 @@ public class ConversorIene {
 		Dolar = 0.0073;
 		Remimbi = 0.049 ;
 		PesoArg = 0.93;
-		
-		
+		DolCan = 0.0094;
+		PesoCol = 31.79;
 	}
 
 	public double getReal() {
@@ -42,6 +42,14 @@ public class ConversorIene {
 	
 	public double getPesoArg() {
 		return PesoArg;
+	}
+	
+	public double getPesCol() {
+		return PesoCol;
+	}
+	
+	public double getDolCan() {
+		return DolCan;
 	}
 
 }
