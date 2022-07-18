@@ -1,0 +1,29 @@
+import java.util.Scanner;
+	    
+
+    public class conversor {
+        
+        public static void main(String[] args) {
+            Scanner entrada = new Scanner(System.in);
+            double cotacao_dolar, valor_dolar,valor_Peso;
+        
+            System.out.print("Conversor de dólar em real\n\n");
+        
+            System.out.print("Digite a cotação do dolar_canadense: ");
+            cotacao_dolar = entrada.nextDouble();
+        
+            System.out.print("Digite o valor em Dolar_canadense: ");
+            valor_dolar = entrada.nextDouble();
+        
+            valor_Peso = valor_dolar * cotacao_dolar;
+        
+            System.out.print("O Valor em Peso_colombiano é " + valor_Peso + "\n");
+        
+            entrada.close();
+            
+            
+            
+          }
+        
+        }
+
